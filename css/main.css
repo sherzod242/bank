@@ -1,0 +1,304 @@
+@import 'fonts.css';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'montserrat';
+  font-weight: 400;
+}
+/* body */
+body{
+  background: #EFF5F5;
+}
+/* container */
+.container{
+  max-width: 1314px;
+  width: 95%;
+  min-height: 40px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+/* navbar */
+.navbar{
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-logo img{
+  width: 132px;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.navbar-nav__list{
+  display: flex;
+  column-gap: 25px;
+}
+.navbar-nav__list a{
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #626262;
+}
+.navbar-nav__call{
+  padding: 9px 39px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323232;
+  box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+}
+.navbar-btn{
+  width: 30px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  justify-content: center;
+  gap: 4px;
+  cursor:  pointer;
+}
+/* header */
+.header{
+  width: 100%;
+  height: 700px;
+  background: url('../images/bg.png') no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-content img{
+  width: 48%;
+}
+.header-content h1{
+  width: 530px;
+  font-size: 50px;
+  line-height: 61px;
+  font-weight: 700;
+  color: #323232;
+}
+.header-apps{
+  max-width: 635px;
+  width: 100%;
+  padding: 27px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  column-gap: 100px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 59px 30px -40px rgba(0, 133, 255, 0.1);
+  transform: translateY(50px);
+}
+.header-apps img{
+  height: 48px;
+}
+/* currency */
+.currency{
+  margin: 119px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.currency-img{
+  width: 40%;
+}
+.currency-info{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.title{
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  color: #626262;
+  width: 100%;
+}
+.currency-item{
+  width: 306px;
+  min-height: 40px;
+  padding: 15px;
+  border-radius: 13px;
+  background: #ffffff;
+  box-shadow: 0px 30px 30px -15px rgba(0, 133, 255, 0.1);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.currency-item__img{
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  background: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currency-item__text{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.currency-item__text p{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  display: flex;
+  gap: 5px;
+}
+.currency-item__text div{
+  width: 43px;
+  height: 10px;
+  border-top: 2px solid #626262;
+  border-bottom: 2px solid #626262;
+}
+.usd .currency-item__img{background: #DA0000;}
+.evro .currency-item__img{background: #0083AC;}
+.rub .currency-item__img{background: #007EDA;}
+.yuan .currency-item__img{background: #00CDDA;}
+/* creditcard */
+.creditcard{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.creditcard-img{
+  width: 526px;
+}
+.creditcard-info{
+  width: 350px;
+  min-height: 40px;
+  border: 1px solid green;
+  color: #626262;
+}
+.creditcard-info h4{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 12px 0 30px;
+  display: flex;
+  gap: 5px;
+}
+.creditcard-info span,
+.creditcard-info p{
+  font-weight: 700;
+}
+.creditcard-info p{
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.btn-more,
+.btn-white{
+  font-size: 16px;
+  line-height: 20px;
+}
+.btn-more{
+  font-weight: 700;
+  color: #626262;
+  padding: 7px 30px;
+}
+.btn-white{
+  padding: 9px;
+  width: 194px;
+  background: #ffffff;
+  color: #323232;
+  border-radius: 6px;
+  box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+  text-align: center;
+}
+.creditcard-info__links{
+  display: flex;
+}
+/* credits */
+.credits{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.credits .title{
+  text-align: center;
+}
+.credits-items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.credits-card{
+  width: 642px;
+  min-height: 100px;
+  background: burlywood;
+  border-radius: 10px;
+  padding: 20px;
+}
+/* media */
+@media (max-width: 992px){
+  .navbar-btn{display: flex;}
+  .navbar-nav{
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(0, 71, 184, 0.49);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #EFF5F5;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-410px);
+  }
+  .navbar-nav__list{
+    flex-direction: column;
+  }
+  .header{
+    height: 500px;
+  }
+  .header-content h1{
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 768px){
+  .header-content{flex-direction: column; justify-content: center;}
+  .header-content h1{font-size: 30px;text-align: center;}
+  .header-content img{width: 80%;}
+  .header-apps{padding: 15px; gap: 5%;}
+  .header-apps img{height: 40px;}
+  .currency-img{display: none;}
+  .currency-info{width: 70%; gap: 15px;}
+  .currency-item{width: 100%;}
+  .currency{justify-content: center;}
+  .currency-info .title{text-align: center;}
+}
+@media (max-width: 576px){
+  .navbar{padding: 5px 0;}
+  .navbar-logo img{width: 100px;}
+}
+@media (max-width: 480px){
+  .currency-info{width: 100%;}
+}
+@media (max-width: 375px){}
